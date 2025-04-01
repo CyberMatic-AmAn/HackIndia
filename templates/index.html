@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>AI-Based Smart Traffic System</h1>
+    <div class="container">
+        <div class="video-section">
+            <img src="{{ url_for('video_feed') }}" alt="Live Traffic Feed" id="video-feed">
+        </div>
+        <div class="data-section">
+            <h2>Traffic Metrics</h2>
+            <div id="lane-data"></div>
+            <p>Last Updated: <span id="timestamp">-</span></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
