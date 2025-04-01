@@ -2,10 +2,8 @@
 
 # To use :
 1.
-'''
+
 pip install requirements.txt
-'''
-2. python
-'''
-predictive_ai.py
-'''
+
+2.run
+   python predictive_ai.py
